@@ -1,10 +1,17 @@
 {
   "name": "monorepo-yarn-workspace",
   "packageManager": "yarn@3.5.1",
+  "scripts": {
+    "ds": "yarn workspace @monorepo/design-system",
+    "apps": "yarn workspace @monorepo/apps"
+  },
   "workspaces": [
     "packages/*"
   ],
   "devDependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.8",
     "typescript": "^5.0.4"
   }
 }
